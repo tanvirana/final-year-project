@@ -1,0 +1,48 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Wed May 28 21:11:57 2025
+| Host         : cccad4.doc.ic.ac.uk running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command      : report_timing -file /mnt/ccnas2/tdp/tr720/final-year-project-workspace/vivado_synth_timing.rpt
+| Design       : calculate_value
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+----------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 in1_0_V[0]
+                            (input port)
+  Destination:            add_table_V_0_U/calculate_value_acud_rom_U/q0_reg/ADDRARDADDR[4]
+                            (rising edge-triggered cell RAMB18E1 clocked by default  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        1.771ns  (logic 0.972ns (54.854%)  route 0.800ns (45.146%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.128ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.128ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  in1_0_V[0] (IN)
+                         net (fo=0)                   0.000     0.000    in1_0_V[0]
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  in1_0_V_IBUF[0]_inst/O
+                         net (fo=2, unplaced)         0.800     1.771    add_table_V_0_U/calculate_value_acud_rom_U/ADDRARDADDR[0]
+                         RAMB18E1                                     r  add_table_V_0_U/calculate_value_acud_rom_U/q0_reg/ADDRARDADDR[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock default rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=0)                   0.000     0.000    ap_clk
+                         IBUF (Prop_ibuf_I_O)         0.838     0.838 r  ap_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.760     1.598    ap_clk_IBUF
+                         BUFG (Prop_bufg_I_O)         0.091     1.689 r  ap_clk_IBUF_BUFG_inst/O
+                         net (fo=7, unplaced)         0.439     2.128    add_table_V_0_U/calculate_value_acud_rom_U/ap_clk_IBUF_BUFG
+                         RAMB18E1                                     r  add_table_V_0_U/calculate_value_acud_rom_U/q0_reg/CLKARDCLK
+
+
+
+

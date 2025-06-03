@@ -1,0 +1,44 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Tue May 27 19:11:56 2025
+| Host         : cccad4.doc.ic.ac.uk running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command      : report_timing -file /mnt/ccnas2/tdp/tr720/final-year-project-workspace/vivado_synth_timing.rpt
+| Design       : calculate_value
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+----------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 weights_0_V[1]
+                            (input port)
+  Destination:            result_0_V[6]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.089ns  (logic 4.576ns (64.557%)  route 2.512ns (35.443%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT5=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  weights_0_V[1] (IN)
+                         net (fo=0)                   0.000     0.000    weights_0_V[1]
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  weights_0_V_IBUF[1]_inst/O
+                         net (fo=13, unplaced)        0.800     1.771    weights_0_V_IBUF[1]
+                         LUT6 (Prop_lut6_I5_O)        0.124     1.895 r  result_0_V_OBUF[7]_inst_i_10/O
+                         net (fo=2, unplaced)         0.913     2.808    result_0_V_OBUF[7]_inst_i_10_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.124     2.932 r  result_0_V_OBUF[7]_inst_i_7/O
+                         net (fo=1, unplaced)         0.000     2.932    result_0_V_OBUF[7]_inst_i_7_n_0
+                         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.544     3.476 r  result_0_V_OBUF[7]_inst_i_1/O[2]
+                         net (fo=1, unplaced)         0.800     4.276    result_0_V_OBUF[6]
+                         OBUF (Prop_obuf_I_O)         2.812     7.089 r  result_0_V_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     7.089    result_0_V[6]
+                                                                      r  result_0_V[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

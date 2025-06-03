@@ -1,0 +1,72 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Tue May 27 17:47:41 2025
+| Host         : cccad4.doc.ic.ac.uk running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command      : report_timing -file /mnt/ccnas2/tdp/tr720/final-year-project-workspace/vivado_synth_timing.rpt
+| Design       : calculate_value
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+----------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             7.280ns  (required time - arrival time)
+  Source:                 mul_table_V_U/calculate_value_mbkb_rom_U/mul_table_V_U/calculate_value_mbkb_rom_U/q0_reg_0_0_cooolgate_en_gate_1_cooolDelFlop/C
+                            (rising edge-triggered cell FDCE clocked by default  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            mul_table_V_U/calculate_value_mbkb_rom_U/q0_reg_0_0/ENARDEN
+                            (rising edge-triggered cell RAMB36E1 clocked by default  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             default
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (default rise@10.000ns - default rise@0.000ns)
+  Data Path Delay:        2.097ns  (logic 0.773ns (36.867%)  route 1.324ns (63.133%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.128ns = ( 12.128 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.456ns
+    Clock Pessimism Removal (CPR):    0.184ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock default rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=0)                   0.000     0.000    ap_clk
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  ap_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    ap_clk_IBUF
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  ap_clk_IBUF_BUFG_inst/O
+                         net (fo=34, unplaced)        0.584     2.456    mul_table_V_U/calculate_value_mbkb_rom_U/clk
+                         FDCE                                         r  mul_table_V_U/calculate_value_mbkb_rom_U/mul_table_V_U/calculate_value_mbkb_rom_U/q0_reg_0_0_cooolgate_en_gate_1_cooolDelFlop/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.478     2.934 f  mul_table_V_U/calculate_value_mbkb_rom_U/mul_table_V_U/calculate_value_mbkb_rom_U/q0_reg_0_0_cooolgate_en_gate_1_cooolDelFlop/Q
+                         net (fo=16, unplaced)        0.524     3.458    mul_table_V_U/calculate_value_mbkb_rom_U/mul_table_V_U/calculate_value_mbkb_rom_U/q0_reg_0_0_cooolgate_en_sig_1
+                         LUT3 (Prop_lut3_I1_O)        0.295     3.753 r  mul_table_V_U/calculate_value_mbkb_rom_U/q0_reg_0_0_ENARDEN_cooolgate_en_gate_2/O
+                         net (fo=1, unplaced)         0.800     4.553    mul_table_V_U/calculate_value_mbkb_rom_U/q0_reg_0_0_ENARDEN_cooolgate_en_sig_2
+                         RAMB36E1                                     r  mul_table_V_U/calculate_value_mbkb_rom_U/q0_reg_0_0/ENARDEN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock default rise edge)   10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=0)                   0.000    10.000    ap_clk
+                         IBUF (Prop_ibuf_I_O)         0.838    10.838 r  ap_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.760    11.598    ap_clk_IBUF
+                         BUFG (Prop_bufg_I_O)         0.091    11.689 r  ap_clk_IBUF_BUFG_inst/O
+                         net (fo=34, unplaced)        0.439    12.128    mul_table_V_U/calculate_value_mbkb_rom_U/clk
+                         RAMB36E1                                     r  mul_table_V_U/calculate_value_mbkb_rom_U/q0_reg_0_0/CLKARDCLK
+                         clock pessimism              0.184    12.311    
+                         clock uncertainty           -0.035    12.276    
+                         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ENARDEN)
+                                                     -0.443    11.833    mul_table_V_U/calculate_value_mbkb_rom_U/q0_reg_0_0
+  -------------------------------------------------------------------
+                         required time                         11.833    
+                         arrival time                          -4.553    
+  -------------------------------------------------------------------
+                         slack                                  7.280    
+
+
+
+

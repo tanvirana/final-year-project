@@ -1,0 +1,52 @@
+{
+    "_comment": "Use config_builder.py for safely structured configurations",
+    "N": 5,
+    "NumLayers": 3,
+    "InWidth": 6,
+    "PartialResults": 11,
+    "DefaultReductionOn": false,
+    "DefaultReductionSettings": {
+        "Default": false,
+        "Fabric": false,
+        "DSP": false,
+        "RAM": false,
+        "RAMSettings": {
+            "DualPort": false,
+            "LUTRAM": false,
+            "BRAMPartitionFactor": 1
+        }
+    },
+    "Layer0": {
+        "N": 5,
+        "InWidth":  6,
+        "DefaultAdds": 2,
+        "FabricAdds": 0,
+        "DSPAdds": 0,
+        "RAMAdds": 0,
+        "DualPort": false,
+        "LUTRAM": false,
+        "BRAMPartitionFactor": 1
+    },
+    "Layer1": {
+        "N": 3,
+        "InWidth":  7,
+        "DefaultAdds": 0,
+        "FabricAdds": 1,
+        "DSPAdds": 0,
+        "RAMAdds": 0,
+        "DualPort": false,
+        "LUTRAM": false,
+        "BRAMPartitionFactor": 1
+    },
+    "Layer2": {
+        "N": 2,
+        "InWidth":  8,
+        "DefaultAdds": 0,
+        "FabricAdds": 0,
+        "DSPAdds": 0,
+        "RAMAdds": 1,
+        "DualPort": true,
+        "LUTRAM": false,
+        "BRAMPartitionFactor": 1
+    }
+}

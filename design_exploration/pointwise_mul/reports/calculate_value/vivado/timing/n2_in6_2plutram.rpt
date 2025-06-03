@@ -1,0 +1,58 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Tue May 27 19:37:12 2025
+| Host         : cccad4.doc.ic.ac.uk running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command      : report_timing -file /mnt/ccnas2/tdp/tr720/final-year-project-workspace/vivado_synth_timing.rpt
+| Design       : calculate_value
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+----------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 prev_in_0_V[4]
+                            (input port)
+  Destination:            mul_table_V_U/calculate_value_mbkb_rom_U/q0_reg[10]/D
+                            (rising edge-triggered cell FDRE clocked by default  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        4.623ns  (logic 2.006ns (43.381%)  route 2.618ns (56.619%))
+  Logic Levels:           6  (IBUF=1 LUT5=1 LUT6=2 MUXF7=2)
+  Clock Path Skew:        2.128ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.128ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  prev_in_0_V[4] (IN)
+                         net (fo=0)                   0.000     0.000    prev_in_0_V[4]
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  prev_in_0_V_IBUF[4]_inst/O
+                         net (fo=319, unplaced)       0.800     1.771    mul_table_V_U/calculate_value_mbkb_rom_U/prev_in_0_V_IBUF[4]
+                         LUT6 (Prop_lut6_I5_O)        0.124     1.895 r  mul_table_V_U/calculate_value_mbkb_rom_U/q0[10]_i_52/O
+                         net (fo=2, unplaced)         0.913     2.808    mul_table_V_U/calculate_value_mbkb_rom_U/q0[10]_i_52_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.124     2.932 r  mul_table_V_U/calculate_value_mbkb_rom_U/q0[10]_i_24/O
+                         net (fo=1, unplaced)         0.000     2.932    mul_table_V_U/calculate_value_mbkb_rom_U/q0[10]_i_24_n_0
+                         MUXF7 (Prop_muxf7_I0_O)      0.241     3.173 r  mul_table_V_U/calculate_value_mbkb_rom_U/q0_reg[10]_i_9/O
+                         net (fo=1, unplaced)         0.905     4.078    mul_table_V_U/calculate_value_mbkb_rom_U/q0_reg[10]_i_9_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.298     4.376 r  mul_table_V_U/calculate_value_mbkb_rom_U/q0[10]_i_3/O
+                         net (fo=1, unplaced)         0.000     4.376    mul_table_V_U/calculate_value_mbkb_rom_U/q0[10]_i_3_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.623 r  mul_table_V_U/calculate_value_mbkb_rom_U/q0_reg[10]_i_1/O
+                         net (fo=1, unplaced)         0.000     4.623    mul_table_V_U/calculate_value_mbkb_rom_U/p_0_out[10]
+                         FDRE                                         r  mul_table_V_U/calculate_value_mbkb_rom_U/q0_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock default rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=0)                   0.000     0.000    ap_clk
+                         IBUF (Prop_ibuf_I_O)         0.838     0.838 r  ap_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.760     1.598    ap_clk_IBUF
+                         BUFG (Prop_bufg_I_O)         0.091     1.689 r  ap_clk_IBUF_BUFG_inst/O
+                         net (fo=25, unplaced)        0.439     2.128    mul_table_V_U/calculate_value_mbkb_rom_U/CLK
+                         FDRE                                         r  mul_table_V_U/calculate_value_mbkb_rom_U/q0_reg[10]/C
+
+
+
+

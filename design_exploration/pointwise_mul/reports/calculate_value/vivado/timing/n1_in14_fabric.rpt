@@ -1,0 +1,68 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Tue May 27 18:20:50 2025
+| Host         : cccad4.doc.ic.ac.uk running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command      : report_timing -file /mnt/ccnas2/tdp/tr720/final-year-project-workspace/vivado_synth_timing.rpt
+| Design       : calculate_value
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+----------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 prev_in_0_V[4]
+                            (input port)
+  Destination:            result_0_V[27]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.736ns  (logic 7.349ns (62.623%)  route 4.386ns (37.377%))
+  Logic Levels:           14  (CARRY4=7 IBUF=1 LUT2=1 LUT3=1 LUT5=1 LUT6=2 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  prev_in_0_V[4] (IN)
+                         net (fo=0)                   0.000     0.000    prev_in_0_V[4]
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  prev_in_0_V_IBUF[4]_inst/O
+                         net (fo=29, unplaced)        0.800     1.771    calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/prev_in_0_V_IBUF[4]
+                         LUT6 (Prop_lut6_I5_O)        0.124     1.895 r  calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[7]_inst_i_32/O
+                         net (fo=2, unplaced)         0.650     2.545    calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[7]_inst_i_32_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     3.065 r  calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[7]_inst_i_25/CO[3]
+                         net (fo=1, unplaced)         0.000     3.065    calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[7]_inst_i_25_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     3.402 r  calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[22]_inst_i_56/O[1]
+                         net (fo=1, unplaced)         0.611     4.013    calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[22]_inst_i_56_n_6
+                         LUT2 (Prop_lut2_I1_O)        0.306     4.319 r  calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[18]_inst_i_43/O
+                         net (fo=1, unplaced)         0.000     4.319    calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[18]_inst_i_43_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     4.852 r  calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[18]_inst_i_16/CO[3]
+                         net (fo=1, unplaced)         0.000     4.852    calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[18]_inst_i_16_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     5.183 r  calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[22]_inst_i_16/O[3]
+                         net (fo=3, unplaced)         0.636     5.819    calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[22]_inst_i_16_n_4
+                         LUT3 (Prop_lut3_I1_O)        0.307     6.126 r  calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[22]_inst_i_17/O
+                         net (fo=2, unplaced)         0.460     6.586    calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[22]_inst_i_17_n_0
+                         LUT5 (Prop_lut5_I1_O)        0.124     6.710 r  calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[22]_inst_i_5/O
+                         net (fo=2, unplaced)         0.430     7.140    calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[22]_inst_i_5_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124     7.264 r  calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[22]_inst_i_9/O
+                         net (fo=1, unplaced)         0.000     7.264    calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[22]_inst_i_9_n_0
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513     7.777 r  calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[22]_inst_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     7.777    calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[22]_inst_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.894 r  calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[26]_inst_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     7.894    calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[26]_inst_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.232     8.126 r  calculate_value_mbkb_U1/calculate_value_mbkb_Mul_LUT_0_U/result_0_V_OBUF[27]_inst_i_1/O[0]
+                         net (fo=1, unplaced)         0.800     8.926    result_0_V_OBUF[27]
+                         OBUF (Prop_obuf_I_O)         2.809    11.736 r  result_0_V_OBUF[27]_inst/O
+                         net (fo=0)                   0.000    11.736    result_0_V[27]
+                                                                      r  result_0_V[27] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

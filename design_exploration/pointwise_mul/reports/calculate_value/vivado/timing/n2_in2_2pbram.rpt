@@ -1,0 +1,48 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Tue May 27 18:51:54 2025
+| Host         : cccad4.doc.ic.ac.uk running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command      : report_timing -file /mnt/ccnas2/tdp/tr720/final-year-project-workspace/vivado_synth_timing.rpt
+| Design       : calculate_value
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+----------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 ap_start
+                            (input port)
+  Destination:            ap_enable_reg_pp0_iter1_reg/D
+                            (rising edge-triggered cell FDRE clocked by default  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        1.771ns  (logic 0.972ns (54.854%)  route 0.800ns (45.146%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.128ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.128ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  ap_start (IN)
+                         net (fo=0)                   0.000     0.000    ap_start
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  ap_start_IBUF_inst/O
+                         net (fo=7, unplaced)         0.800     1.771    ap_ready_OBUF
+                         FDRE                                         r  ap_enable_reg_pp0_iter1_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock default rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=0)                   0.000     0.000    ap_clk
+                         IBUF (Prop_ibuf_I_O)         0.838     0.838 r  ap_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.760     1.598    ap_clk_IBUF
+                         BUFG (Prop_bufg_I_O)         0.091     1.689 r  ap_clk_IBUF_BUFG_inst/O
+                         net (fo=7, unplaced)         0.439     2.128    ap_clk_IBUF_BUFG
+                         FDRE                                         r  ap_enable_reg_pp0_iter1_reg/C
+
+
+
+

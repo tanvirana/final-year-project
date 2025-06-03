@@ -1,0 +1,18 @@
+{
+  "N": 5, 
+  "DefaultReductionOn": true, 
+  "PartialResults": 11, 
+  "InWidth": 6, 
+  "DefaultReductionSettings": {
+    "Default": false, 
+    "RAM": true, 
+    "RAMSettings": {
+      "DualPort": true, 
+      "BRAMPartitionFactor": 1, 
+      "LUTRAM": true
+    }, 
+    "Fabric": false, 
+    "DSP": false
+  }, 
+  "NumLayers": 3
+}

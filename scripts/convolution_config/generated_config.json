@@ -1,0 +1,71 @@
+{
+  "Layer3": {
+    "DSPAdds": 0, 
+    "FabricAdds": 1, 
+    "RAMAdds": 0, 
+    "DualPort": false, 
+    "DefaultAdds": 0, 
+    "BRAMPartitionFactor": 1, 
+    "LUTRAM": false, 
+    "N": 2, 
+    "InWidth": 15
+  }, 
+  "DefaultMuls": 3, 
+  "RAMMuls": 4, 
+  "Layer0": {
+    "DSPAdds": 3, 
+    "FabricAdds": 0, 
+    "RAMAdds": 0, 
+    "DualPort": false, 
+    "DefaultAdds": 2, 
+    "BRAMPartitionFactor": 1, 
+    "LUTRAM": false, 
+    "N": 10, 
+    "InWidth": 12
+  }, 
+  "Layer2": {
+    "DSPAdds": 0, 
+    "FabricAdds": 0, 
+    "RAMAdds": 0, 
+    "DualPort": false, 
+    "DefaultAdds": 1, 
+    "BRAMPartitionFactor": 1, 
+    "LUTRAM": false, 
+    "N": 3, 
+    "InWidth": 14
+  }, 
+  "Layer1": {
+    "DSPAdds": 1, 
+    "FabricAdds": 1, 
+    "RAMAdds": 0, 
+    "DualPort": false, 
+    "DefaultAdds": 0, 
+    "BRAMPartitionFactor": 1, 
+    "LUTRAM": false, 
+    "N": 5, 
+    "InWidth": 13
+  }, 
+  "MulRAMSettings": {
+    "DualPort": true, 
+    "BRAMPartitionFactor": 4, 
+    "LUTRAM": false
+  }, 
+  "DefaultReductionOn": false, 
+  "N": 10, 
+  "InWidth": 6, 
+  "NumLayers": 4, 
+  "FabricMuls": 3, 
+  "DSPMuls": 0, 
+  "PartialResults": 21, 
+  "DefaultReductionSettings": {
+    "Default": false, 
+    "RAM": false, 
+    "RAMSettings": {
+      "DualPort": false, 
+      "BRAMPartitionFactor": 1, 
+      "LUTRAM": false
+    }, 
+    "Fabric": false, 
+    "DSP": false
+  }
+}

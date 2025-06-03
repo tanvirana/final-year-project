@@ -1,0 +1,117 @@
+
+
+================================================================
+== Vivado HLS Report for 'calculate_value'
+================================================================
+* Date:           Thu May 29 14:50:34 2025
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        design_exploration_hls_prj_2
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 4.023 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       -|      -|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      2|       0|      0|    -|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|      -|    -|
+|Register         |        -|      -|       -|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        0|      2|       0|      0|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        0|   ~0  |       0|      0|    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+---+----+-----+
+    |         Instance        |        Module        | BRAM_18K| DSP48E| FF| LUT| URAM|
+    +-------------------------+----------------------+---------+-------+---+----+-----+
+    |calculate_value_abkb_U1  |calculate_value_abkb  |        0|      1|  0|   0|    0|
+    |calculate_value_abkb_U2  |calculate_value_abkb  |        0|      1|  0|   0|    0|
+    +-------------------------+----------------------+---------+-------+---+----+-----+
+    |Total                    |                      |        0|      2|  0|   0|    0|
+    +-------------------------+----------------------+---------+-------+---+----+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+-----------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |  Source Object  |    C Type    |
++-------------------+-----+-----+------------+-----------------+--------------+
+|ap_start           |  in |    1| ap_ctrl_hs | calculate_value | return value |
+|ap_done            | out |    1| ap_ctrl_hs | calculate_value | return value |
+|ap_idle            | out |    1| ap_ctrl_hs | calculate_value | return value |
+|ap_ready           | out |    1| ap_ctrl_hs | calculate_value | return value |
+|in1_0_V            |  in |   16|   ap_none  |     in1_0_V     |    pointer   |
+|in1_1_V            |  in |   16|   ap_none  |     in1_1_V     |    pointer   |
+|in2_0_V            |  in |   16|   ap_none  |     in2_0_V     |    pointer   |
+|in2_1_V            |  in |   16|   ap_none  |     in2_1_V     |    pointer   |
+|result_0_V         | out |   32|   ap_vld   |    result_0_V   |    pointer   |
+|result_0_V_ap_vld  | out |    1|   ap_vld   |    result_0_V   |    pointer   |
+|result_1_V         | out |   32|   ap_vld   |    result_1_V   |    pointer   |
+|result_1_V_ap_vld  | out |    1|   ap_vld   |    result_1_V   |    pointer   |
++-------------------+-----+-----+------------+-----------------+--------------+
+

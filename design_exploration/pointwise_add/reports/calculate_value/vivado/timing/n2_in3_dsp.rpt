@@ -1,0 +1,40 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Wed May 28 21:38:30 2025
+| Host         : cccad4.doc.ic.ac.uk running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command      : report_timing -file /mnt/ccnas2/tdp/tr720/final-year-project-workspace/vivado_synth_timing.rpt
+| Design       : calculate_value
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+----------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 in1_0_V[2]
+                            (input port)
+  Destination:            result_0_V[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.263ns  (logic 5.663ns (77.977%)  route 1.599ns (22.023%))
+  Logic Levels:           3  (DSP48E1=1 IBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  in1_0_V[2] (IN)
+                         net (fo=0)                   0.000     0.000    in1_0_V[2]
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  in1_0_V_IBUF[2]_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    calculate_value_abkb_U1/calculate_value_abkb_AddSub_DSP_0_U/in1_0_V[2]
+                         DSP48E1 (Prop_dsp48e1_B[2]_P[0])
+                                                      2.057     3.828 r  calculate_value_abkb_U1/calculate_value_abkb_AddSub_DSP_0_U/s/P[0]
+                         net (fo=1, unplaced)         0.800     4.628    result_0_V_OBUF[0]
+                         OBUF (Prop_obuf_I_O)         2.634     7.263 r  result_0_V_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     7.263    result_0_V[0]
+                                                                      r  result_0_V[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

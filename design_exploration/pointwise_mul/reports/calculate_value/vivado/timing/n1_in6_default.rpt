@@ -1,0 +1,59 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Tue May 27 17:16:42 2025
+| Host         : cccad4.doc.ic.ac.uk running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command      : report_timing -file /mnt/ccnas2/tdp/tr720/final-year-project-workspace/vivado_synth_timing.rpt
+| Design       : calculate_value
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+----------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 weights_0_V[0]
+                            (input port)
+  Destination:            result_0_V[11]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.585ns  (logic 6.008ns (62.686%)  route 3.576ns (37.314%))
+  Logic Levels:           11  (CARRY4=4 IBUF=1 LUT2=1 LUT4=1 LUT5=1 LUT6=2 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  weights_0_V[0] (IN)
+                         net (fo=0)                   0.000     0.000    weights_0_V[0]
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 f  weights_0_V_IBUF[0]_inst/O
+                         net (fo=12, unplaced)        0.800     1.771    weights_0_V_IBUF[0]
+                         LUT2 (Prop_lut2_I1_O)        0.124     1.895 r  result_0_V_OBUF[1]_inst_i_9/O
+                         net (fo=1, unplaced)         0.449     2.344    result_0_V_OBUF[1]_inst_i_9_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.124     2.468 r  result_0_V_OBUF[1]_inst_i_5/O
+                         net (fo=1, unplaced)         0.000     2.468    result_0_V_OBUF[1]_inst_i_5_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376     2.844 r  result_0_V_OBUF[1]_inst_i_1/CO[3]
+                         net (fo=1, unplaced)         0.009     2.853    result_0_V_OBUF[1]_inst_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     3.184 r  result_0_V_OBUF[9]_inst_i_21/O[3]
+                         net (fo=2, unplaced)         0.629     3.813    result_0_V_OBUF[9]_inst_i_21_n_4
+                         LUT5 (Prop_lut5_I2_O)        0.307     4.120 r  result_0_V_OBUF[9]_inst_i_11/O
+                         net (fo=2, unplaced)         0.430     4.550    result_0_V_OBUF[9]_inst_i_11_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.124     4.674 r  result_0_V_OBUF[9]_inst_i_2/O
+                         net (fo=2, unplaced)         0.460     5.134    result_0_V_OBUF[9]_inst_i_2_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124     5.258 r  result_0_V_OBUF[9]_inst_i_6/O
+                         net (fo=1, unplaced)         0.000     5.258    result_0_V_OBUF[9]_inst_i_6_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376     5.634 r  result_0_V_OBUF[9]_inst_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     5.634    result_0_V_OBUF[9]_inst_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     5.971 r  result_0_V_OBUF[11]_inst_i_1/O[1]
+                         net (fo=1, unplaced)         0.800     6.771    result_0_V_OBUF[11]
+                         OBUF (Prop_obuf_I_O)         2.813     9.585 r  result_0_V_OBUF[11]_inst/O
+                         net (fo=0)                   0.000     9.585    result_0_V[11]
+                                                                      r  result_0_V[11] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

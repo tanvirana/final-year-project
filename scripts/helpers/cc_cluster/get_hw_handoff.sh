@@ -1,0 +1,1 @@
+cp /mnt/ccnas2/tdp/tr720/final-year-project-workspace/axi_wrapped_convolver_vivado_prj/project_1.srcs/sources_1/bd/dma_example/hw_handoff/dma_example.hwh ./configurable_convolver.hwh
