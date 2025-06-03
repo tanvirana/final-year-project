@@ -114,7 +114,9 @@ void example(hls::stream< ap_axis<32,2,5,6> > &A,
 	}
 
     // Dummy call to fill BRAM pipelines
-	volatile ap_uint<32> dummy_result = calculate_value(weights, prev_in);
+	ap_uint<2 * IN_WIDTH> dummy_result[N];
+#pragma HLS ARRAY PARTITION variable=dummy_result complete
+	calculate_value(weights, prev_in, dummy_result);
 
 	ap_axis<32,2,5,6> tmp;
 	ap_axis<32,2,5,6> tmp2;
