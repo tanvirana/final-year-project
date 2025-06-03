@@ -1,5 +1,0 @@
-alias startvivado="source /mnt/ccnas2/bdp/opt/Xilinx/Vivado/2020.1/settings64.sh && vivado"
-alias startvitishls="source /mnt/ccnas2/bdp/opt/Xilinx/Vitis/2020.1/settings64.sh && vitis_hls"
-alias startvivadohls="source /mnt/ccnas2/bdp/opt/Xilinx/Vivado/2020.1/settings64.sh && vivado_hls"
-alias usage="/vol/linux/bin/usage"
-export XILINXD_LICENSE_FILE=27000@chicken.doc.ic.ac.uk
