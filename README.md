@@ -7,7 +7,7 @@ hls4ml extensions and testing are held in their own standalone repositories.
 ## Repository Structure
 - ```/design_exploration``` 
 
-Holds module directories contain HLS code for pointwise add, pointwise multiplication, summation (additive reduction), and 1D convolution (dot product). Each module has it's own subdirectory. ```/report``` subdirectories hold Vivado HLS and Vivado reports from configured designs.
+Holds module directories contain HLS code for configurable heterogeneous resource implementations of pointwise add, pointwise multiplication, summation (additive reduction), and 1D convolution (dot product). Each module has it's own subdirectory. ```/report``` subdirectories hold Vivado HLS and Vivado reports from configured designs.
 
 - ```/scripts```
 
