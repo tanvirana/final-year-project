@@ -13,8 +13,8 @@ Holds module directories contain HLS code for pointwise add, pointwise multiplic
 
 Subdirectories for configuration of modules. These include interactive programs for high-level configuration, code generation logic, and scripts for automated parameter sweeps.
 
-```vivado_setup.tcl``` sets up a Vivado project for AXI4 streaming to a synthesised IP. 
+```vivado_setup.tcl``` sets up a Vivado project for AXI4 streaming to an imported IP. 
 
-```/helpers``` contains scripts for file transfer, environment setup.
+```/helpers``` contains scripts for file transfer and environment setup.
 
 ```/pynq_z2``` holds programs for deploying and testing designs on a PYNQ-Z2 FPGA development board.
