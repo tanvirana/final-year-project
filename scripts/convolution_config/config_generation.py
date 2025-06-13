@@ -104,12 +104,12 @@ config["FabricMuls"] = numFabric
 config["DSPMuls"] = numDsp
 config["RAMMuls"] = numRam
 
+lutRam = ""
 if numRam > 0:
     dualPort = ""
     while dualPort not in ["y", "n"]:
         dualPort = raw_input("Dual port? (y/n) ")
     config["MulRAMSettings"]["DualPort"] = dualPort == "y"
-    lutRam = ""
     while lutRam not in ["y", "n"]:
         lutRam = raw_input("LUT RAM? (y/n) ")
     lutRam = lutRam == "y"
