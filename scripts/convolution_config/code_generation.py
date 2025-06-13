@@ -105,7 +105,7 @@ homogeneousAddTable = None
 layerAddTables = []
 if config["DefaultReductionOn"] and config["DefaultReductionSettings"]["RAM"]:
    homogeneousAddTable = config["InWidth"] * 2 + config["NumLayers"] - 1
-else:
+elif not config["DefaultReductionOn"]:
     for i in range(config["NumLayers"]):
         if config["Layer{}".format(i)]["RAMAdds"] > 0:
             layerAddTables.append(config["Layer{}".format(i)]["InWidth"])
